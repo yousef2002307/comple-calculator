@@ -1,0 +1,61 @@
+section{
+
+  margin: 200px auto;
+  width: 400px;
+ 
+
+}
+body{
+  background-color: #9dc9da;
+}
+.op {
+  pointer-events: none;
+}
+section header{
+  background-color:#242424 ;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 10px 20px;
+  min-height: 88px;
+  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+section header span{
+  font-size: 25px;
+    font-weight: bold;
+
+}
+section .body{
+  display: grid;
+  grid-template-columns: repeat(4,clac(100%/4));
+  grid-template-columns: 25% 25% 25% 25%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+.body > aside{
+  text-align: center;
+  background-color: #ffffff;
+  padding: 15px 0;
+  font-size: 20px;
+  border: 1px solid #b5b0b0;
+  font-weight: bold;
+}
+.body .equal{
+  grid-row-start: 2;
+    grid-column-start: 4;
+    grid-row-end: 6;
+}
+.body .plus,.body .minus, .body .product, .body .divide{
+  background-color: #e7e7e6;
+}
+.body .equal{
+  background-color: #f87d4f;
+  color: #000;
+  line-height: 230px;
+  border-bottom-right-radius: 10px
+}
+.body .zero{
+  border-bottom-left-radius: 10px 
+}
